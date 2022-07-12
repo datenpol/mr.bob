@@ -9,14 +9,14 @@ from setuptools import find_packages
 
 install_requires = [
     'setuptools',
-    'six>=1.2.0',  # 1.1.0 release doesn't have six.moves.input
+    'six>=1.16.0',
 ]
 
 if (3,) < sys.version_info < (3, 3):
     # Jinja 2.7 drops Python 3.2 compat.
     install_requires.append('Jinja2>=2.5.0,<2.7dev')
 else:
-    install_requires.append('Jinja2>=2.5.0')
+    install_requires.append('Jinja2>=3.1.2')
 
 try:
     import importlib  # NOQA
@@ -39,7 +39,7 @@ def read(*rnames):
 
 
 setup(name='mr.bob',
-      version='0.1.3.dev0',
+      version='0.1.4',
       description='Bob renders directory structure templates',
       long_description=read('README.rst') + '\n' + read('HISTORY.rst'),
       classifiers=[
@@ -52,10 +52,11 @@ setup(name='mr.bob',
           "Programming Language :: Python :: 3.2",
           "Programming Language :: Python :: 3.3",
           "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.10",
       ],
-      author='Domen Kozar, Tom Lazar',
+      author='Ahmed Aly, Domen Kozar, Tom Lazar',
       author_email='',
-      url='https://github.com/iElectric/mr.bob.git',
+      url='https://github.com/datenpol/mr.bob.git',
       license='BSD',
       packages=find_packages(),
       install_requires=install_requires,
