@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mrbob"
-version = "0.4.1"
+version = "0.1.4"
 authors = [
     { name = "Ahmed Aly", email = "ahmed.aly@datenpol.at" },
     { name = "Domen Kozar, " },
