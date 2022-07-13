@@ -32,9 +32,11 @@ setuptools.setup(
     key_words="temlates, render, mr.bob, odoo",
     install_requires=required,
     entry_points="""
-      [console_scripts]
-      mrbob = mrbob.cli:main
-      """,
+          [console_scripts]
+          mrbob = mrbob.cli:main
+          """,
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.7",
+    include_package_data=True,
+    zip_safe=False,
 )
