@@ -1,5 +1,5 @@
-from setuptools import setup, find_packages
 import pathlib
+from setuptools import setup, find_packages
 
 here = pathlib.Path(__file__).parent.resolve()
 
@@ -31,11 +31,12 @@ setup(
     packages=find_packages(where="src"),
     python_requires=">=3.7, <4",
     install_requires=[
+        "setuptools",
         "six",
-    "ordereddict",
-    "importlib",
-    "Jinja2",
-    "argparse"
+        "ordereddict",
+        "importlib",
+        "Jinja2",
+        "argparse"
     ],
     entry_points={
         "console_scripts": [
