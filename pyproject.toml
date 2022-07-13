@@ -1,7 +1,3 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "mrbob"
 version = "0.1.4"
@@ -36,5 +32,9 @@ dependencies = [
 "Homepage" = "https://github.com/datenpol/mr.bob"
 "Bug Tracker" = "https://github.com/datenpol/mr.bob/issues"
 
-[project.scripts]
+[scripts]
 mrbob = "mrbob.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
