@@ -1,40 +1,5 @@
-[project]
-name = "mrbob"
-version = "0.1.4"
-authors = [
-    { name = "Ahmed Aly", email = "ahmed.aly@datenpol.at" },
-    { name = "Domen Kozar, " },
-    { name = "Tom Lazar" },
-]
-description = "Bob renders directory structure templates"
-readme = "README.md"
-license = { file = "LICENSE" }
-requires-python = ">=3.7"
-classifiers = [
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-]
-
-dependencies = [
-    "six",
-    "ordereddict",
-    "importlib",
-    "Jinja2",
-    "argparse"
-]
-
-[project.urls]
-"Homepage" = "https://github.com/datenpol/mr.bob"
-"Bug Tracker" = "https://github.com/datenpol/mr.bob/issues"
-
-[scripts]
-mrbob = "mrbob.cli:main"
-
 [build-system]
-requires = ["setuptools>=61.0"]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
 build-backend = "setuptools.build_meta"

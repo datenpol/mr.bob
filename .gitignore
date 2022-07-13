@@ -1,12 +1,13 @@
+build/
+dist/
 *.egg-info/
-*.pyc
-/bin/
-/local/
-/lib/
-/dist/
-/include/
-/.coverage
-/htmlcov
-/docs/build/
-/build/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
 .idea
+
+# due to using tox and pytest
+.tox
+.cache
